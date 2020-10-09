@@ -6,6 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "createComponent": "ng generate component",
+    "createPipe": "ng generate pipe",
+    "createDirective": "ng generate directive",
+
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

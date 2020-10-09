@@ -6,6 +6,7 @@ import { AsnOneComponentComponent } from './asn-one-component/asn-one-component.
 import { AsnOnePipePipe } from './asn-one-pipe.pipe';
 import { AsnOneDirectiveDirective } from './asn-one-directive.directive';
 import { ContentCardComponent } from './content-card/content-card.component';
+import { ContentListComponent } from './content-list/content-list.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ContentCardComponent } from './content-card/content-card.component';
     AsnOneComponentComponent,
     AsnOnePipePipe,
     AsnOneDirectiveDirective,
-    ContentCardComponent
+    ContentCardComponent,
+    ContentListComponent,
   ],
   imports: [
     BrowserModule

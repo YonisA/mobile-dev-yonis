@@ -1,0 +1,35 @@
+:host{
+  width: 300px;
+  display: block;
+  margin: 30px auto;
+  border: 5px dashed #FFA500;
+  background-color: #ffffd4;
+}
+:host.is-Last{
+  width: 300px;
+  margin: 30px auto;
+  border: 5px solid #a8ee90;
+  background-color: #ffbdb6;
+}
+
+.title{
+  font-size: 20px;
+  text-align: center;
+  color: #9678b6;
+}
+.author{
+  font-size: 18px;
+  text-align: center;
+  color: #641cb0;
+}
+.body{
+  font-size: 14px;
+  text-align: center;
+}
+.image{
+  width: 200px;
+  alignment: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

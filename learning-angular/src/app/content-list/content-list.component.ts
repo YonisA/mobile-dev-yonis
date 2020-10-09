@@ -1,0 +1,61 @@
+import {Component, OnInit} from '@angular/core';
+import {Content} from '../helper-files/content-interface';
+
+@Component({
+  selector: 'app-content-list',
+  templateUrl: './content-list.component.html',
+  styleUrls: ['./content-list.component.css']
+})
+export class ContentListComponent implements OnInit {
+ listOfItems: Content[];
+  constructor() {
+    this.listOfItems = [{
+      id: 0,
+      title: 'This is Yonis',
+      author: 'the author of this project',
+      tags: ['person', 'info', 'the author'],
+      type: 'General info',
+      imageUrl: 'https://darksouls.wdfiles.com/local--files/npcs/solaire-of-astora-large.jpg',
+      body: 'If only i was so grossly incandescent'
+    },
+
+      {
+        id: 1,
+        title: 'This is Saad',
+        author: 'Yonis Sheekh',
+        tags: ['person', 'info', 'student'],
+        type: 'General info',
+        imageUrl: 'https://cdn.cloudflare.steamstatic.com/steam/apps/552990/header.jpg?t=1602092003',
+        body: 'he likes to play world of warships'
+    },
+      {
+        id: 2,
+        title: 'This is Owen',
+        author: 'also Yonis Sheekh',
+        tags: ['person', 'info', 'student'],
+        type: 'General info',
+        imageUrl: 'https://i.ytimg.com/vi/HaJx4TdshFA/maxresdefault.jpg',
+        body: 'he likes Star Citizen but the game is never coming out'
+    },
+      {
+        id: 3,
+        title: 'This is Nick',
+        author: 'also also Yonis Sheekh',
+        tags: ['person', 'info', 'student'],
+        type: 'General info',
+        imageUrl: 'https://cdn1.dotesports.com/wp-content/uploads/2019/09/12195522/league-of-legends.jpg',
+        body: 'he likes League of legends. league bad >:('
+    },
+      {
+        id: 4,
+        title: 'This is no one',
+        author: 'its ya boy Yonis Sheekh again',
+        tags: ['subject', 'space stuff'],
+        type: 'Science',
+        imageUrl: 'https://www.esa.int/var/esa/storage/images/19716864-11-eng-GB/ESA_root_pillars.jpg',
+        body: 'vast emptiness of space and time'
+    }];
+  }
+  ngOnInit(): void {
+  }
+}
