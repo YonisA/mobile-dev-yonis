@@ -8,13 +8,14 @@ import {Content} from '../helper-files/content-interface';
 })
 export class ContentListComponent implements OnInit {
  listOfItems: Content[];
+  indicator: string;
   constructor() {
     this.listOfItems = [{
       id: 0,
       title: 'This is Yonis',
       author: 'the author of this project',
       tags: ['person', 'info', 'the author'],
-      type: 'General info',
+      type: 'author',
       imageUrl: 'https://darksouls.wdfiles.com/local--files/npcs/solaire-of-astora-large.jpg',
       body: 'If only i was so grossly incandescent'
     },
@@ -23,8 +24,8 @@ export class ContentListComponent implements OnInit {
         id: 1,
         title: 'This is Saad',
         author: 'Yonis Sheekh',
-        tags: ['person', 'info', 'student'],
-        type: 'General info',
+        tags: ['person', 'info'],
+        type: 'student',
         imageUrl: 'https://cdn.cloudflare.steamstatic.com/steam/apps/552990/header.jpg?t=1602092003',
         body: 'he likes to play world of warships'
     },
@@ -32,8 +33,8 @@ export class ContentListComponent implements OnInit {
         id: 2,
         title: 'This is Owen',
         author: 'also Yonis Sheekh',
-        tags: ['person', 'info', 'student'],
-        type: 'General info',
+        tags: ['person', 'info'],
+        type: 'student',
         imageUrl: 'https://i.ytimg.com/vi/HaJx4TdshFA/maxresdefault.jpg',
         body: 'he likes Star Citizen but the game is never coming out'
     },
@@ -41,8 +42,8 @@ export class ContentListComponent implements OnInit {
         id: 3,
         title: 'This is Nick',
         author: 'also also Yonis Sheekh',
-        tags: ['person', 'info', 'student'],
-        type: 'General info',
+        tags: ['person', 'info'],
+        type: 'student',
         imageUrl: 'https://cdn1.dotesports.com/wp-content/uploads/2019/09/12195522/league-of-legends.jpg',
         body: 'he likes League of legends. league bad >:('
     },
@@ -50,11 +51,29 @@ export class ContentListComponent implements OnInit {
         id: 4,
         title: 'This is no one',
         author: 'its ya boy Yonis Sheekh again',
-        tags: ['subject', 'space stuff'],
+        tags: ['subject', 'space and stuff'],
         type: 'Science',
         imageUrl: 'https://www.esa.int/var/esa/storage/images/19716864-11-eng-GB/ESA_root_pillars.jpg',
         body: 'vast emptiness of space and time'
     }];
+  }
+  searchTitle(title: string): void{
+    let checker: boolean;
+    for (const userEntry of this.listOfItems) {
+      if (userEntry.title === title) {
+        checker = true;
+        break;
+      }else{
+        checker = false;
+      }
+    }
+    if (checker){
+      console.log('valid hazza');
+      this.indicator = 'valid hazza';
+    }else{
+      console.log('invalid kappa');
+      this.indicator = 'invalid kappa';
+    }
   }
   ngOnInit(): void {
   }

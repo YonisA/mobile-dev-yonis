@@ -1,0 +1,23 @@
+div{
+  text-align:center
+}
+input{
+  background-color: antiquewhite;
+}
+button{
+  margin-left: 5px;
+  background-color: antiquewhite;
+}
+.science{
+  border: 10px dotted seagreen;
+  background-color: coral;
+}
+
+.student{
+  border: 5px dotted salmon;
+  background-color: blanchedalmond;
+}
+.author{
+  border: 6px dashed saddlebrown;
+  background-color: cyan;
+}

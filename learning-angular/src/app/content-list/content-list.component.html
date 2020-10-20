@@ -1,3 +1,12 @@
-<app-content-card *ngFor="let itemList of listOfItems; last as isLast" [content]="itemList"
-[class.is-Last]="isLast">
-</app-content-card>
+<div>
+  <input type="text" #title/>
+  <button (click)="searchTitle(title.value)">Search</button>
+  <br>
+  <p>{{indicator}}</p>
+</div>
+<app-content-card class="author" *ngFor="let itemList of listOfItems | asnThreePipe: 'author';" [content]="itemList"></app-content-card>
+<app-content-card class="student" *ngFor="let itemList of listOfItems | asnThreePipe: 'student';" [content]="itemList"></app-content-card>
+<app-content-card class="science" *ngFor="let itemList of listOfItems | asnThreePipe: 'Science';" [content]="itemList"></app-content-card>
+
+
+
