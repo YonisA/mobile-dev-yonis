@@ -68,8 +68,8 @@ export class ContentListComponent implements OnInit {
       }
     }
     if (checker){
-      console.log('valid hazza');
-      this.indicator = 'valid hazza';
+      console.log('valid hazza!');
+      this.indicator = 'valid hazza!';
     }else{
       console.log('invalid kappa');
       this.indicator = 'invalid kappa';
