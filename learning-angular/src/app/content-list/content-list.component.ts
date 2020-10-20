@@ -60,7 +60,7 @@ export class ContentListComponent implements OnInit {
   searchTitle(title: string): void{
     let checker: boolean;
     for (const userEntry of this.listOfItems) {
-      if (userEntry.title === title) {
+      if (userEntry.title.toLowerCase() === title.toLowerCase()) {
         checker = true;
         break;
       }else{
