@@ -35,7 +35,7 @@ export class ContentListComponent implements OnInit {
         author: 'also Yonis Sheekh',
         tags: ['person', 'info'],
         type: 'student',
-        imageUrl: 'https://i.ytimg.com/vi/HaJx4TdshFA/maxresdefault.jpg',
+        imageUrl: '',
         body: 'he likes Star Citizen but the game is never coming out'
     },
       {
@@ -44,7 +44,7 @@ export class ContentListComponent implements OnInit {
         author: 'also also Yonis Sheekh',
         tags: ['person', 'info'],
         type: 'student',
-        imageUrl: 'https://cdn1.dotesports.com/wp-content/uploads/2019/09/12195522/league-of-legends.jpg',
+        imageUrl: '',
         body: 'he likes League of legends. league bad >:('
     },
       {

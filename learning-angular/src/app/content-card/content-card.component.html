@@ -1,8 +1,10 @@
 <div class="content-{{ content.id }}">
-  <h1 class="title">Title: {{ content.title }}</h1>
+  <h1 appHoverStyle id="title" class="title">Title: {{ content.title }}</h1>
   <h2 class="author">Author: {{ content.author }}</h2>
-  <img (click)="showId()" class="image" src="{{ content.imageUrl }}">
-  <p class="body">Tags: {{ content.tags }}</p>
+  <img *ngIf="content.imageUrl !== ''; else default" src="{{content.imageUrl}}" class="image" (click)="this.showId()"/>
+  <p class="tags " *ngFor="let tag of content.tags" appHoverStyle id='tags'>{{tag}}</p>
   <p class="body">Type: {{ content.type }}</p>
   <p class="body">Body: {{ content.body }}</p>
 </div>
+<ng-template #default><img src="https://i.stack.imgur.com/l60Hf.png" class="default"/></ng-template>
+

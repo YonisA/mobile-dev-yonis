@@ -5,6 +5,7 @@
   margin: 30px auto;
   border: 5px dashed #FFA500;
   background-color: #ffffd4;
+  text-align: center;
 }
 :host.is-Last{
   width: 300px;
@@ -28,6 +29,18 @@
   text-align: center;
 }
 .image{
+  width: 200px;
+  alignment: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tags{
+  display: inline-block;
+  padding-left: 5px;
+  text-align: center;
+}
+.default{
   width: 200px;
   alignment: center;
   display: block;
