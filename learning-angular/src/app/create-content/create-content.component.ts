@@ -16,7 +16,6 @@ export class CreateContentComponent implements OnInit {
       title: '',
       author: '',
       imageUrl: '',
-      tags: [],
       type: '',
       body: ''
     };
