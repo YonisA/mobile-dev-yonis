@@ -1,0 +1,24 @@
+
+
+<div>
+  <h1>ADDER OF THINGS</h1>
+  <form>
+  <input [(ngModel)]="newAddition.id" type="number" placeholder="id"/>
+  <br>
+  <input [(ngModel)]="newAddition.title" type="text" placeholder="Enter Title"  />
+  <br>
+  <input [(ngModel)]="newAddition.author" type="text" placeholder="Enter Author"/>
+  <br>
+  <input [(ngModel)]="newAddition.imageUrl" type="text" placeholder="Enter ImageURL"/>
+  <br>
+  <input [(ngModel)]="newAddition.tags" type="text" placeholder="Enter Tags"/>
+  <br>
+  <input [(ngModel)]="newAddition.type" type="text" placeholder="Enter Type"/>
+  <br>
+  <input [(ngModel)]="newAddition.body" type="text" placeholder="Enter Body"/>
+  <br>
+  <button (click)="addContent()">Search</button>
+  <br>
+  <p class="error"> {{error}}</p>
+  </form>
+</div>

@@ -1,0 +1,16 @@
+div{
+  text-align:center
+}
+
+input{
+  padding: 10px;
+  margin: 10px;
+}
+button{
+  alignment: center;
+  padding: 10px 25px 10px 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: salmon;
+  color: white;
+}

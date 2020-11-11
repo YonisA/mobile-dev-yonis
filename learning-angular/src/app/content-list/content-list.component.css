@@ -2,11 +2,16 @@ div{
   text-align:center
 }
 input{
-  background-color: antiquewhite;
+  padding: 10px;
+  margin: 10px;
 }
 button{
-  margin-left: 5px;
-  background-color: antiquewhite;
+  alignment: center;
+  padding: 10px 25px 10px 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: salmon;
+  color: white;
 }
 .science{
   border: 10px dotted seagreen;

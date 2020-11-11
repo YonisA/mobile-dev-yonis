@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Content} from '../helper-files/content-interface';
+import {CreateContentComponent} from '../create-content/create-content.component';
 
 @Component({
   selector: 'app-content-list',
@@ -56,6 +57,10 @@ export class ContentListComponent implements OnInit {
         imageUrl: 'https://www.esa.int/var/esa/storage/images/19716864-11-eng-GB/ESA_root_pillars.jpg',
         body: 'vast emptiness of space and time'
     }];
+  }
+  cloneArray(newContentFromChild: Content): void{
+    this.listOfItems.push(newContentFromChild);
+    this.listOfItems = Object.assign([], this.listOfItems);
   }
   searchTitle(title: string): void{
     let checker: boolean;
