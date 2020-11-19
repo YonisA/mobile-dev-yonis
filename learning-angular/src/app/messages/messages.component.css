@@ -1,0 +1,42 @@
+.clear{
+  padding: 5px 20px;
+  background-color: antiquewhite;
+  display: block;
+  margin: 5px auto;
+  font-size: 16px;
+}
+
+h2{
+  text-align: center;
+  animation: colorRotate 4s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: Red;
+  }
+  28% {
+    color: orange;
+  }
+  42% {
+    color: yellow;
+  }
+  56% {
+    color: Green;
+  }
+  70% {
+    color: blue;
+    }
+  84% {
+    color: indigo;
+  }
+  100% {
+    color: violet;
+  }
+}
+.message{
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+  text-decoration: underline dashed;
+}
