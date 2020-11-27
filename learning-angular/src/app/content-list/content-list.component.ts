@@ -31,6 +31,10 @@ export class ContentListComponent implements OnInit {
       this.indicator = 'invalid kappa';
     }
   }
+  cloneArray(newContentFromChild: Content): void{
+    this.listOfItems.push(newContentFromChild);
+    this.listOfItems = Object.assign([], this.listOfItems);
+  }
   ngOnInit(): void {
     this.service.listOfObservableItems().subscribe(listOItems => {
       this.listOfItems = listOItems;

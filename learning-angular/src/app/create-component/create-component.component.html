@@ -1,0 +1,17 @@
+<div>
+  <h1>Thing Addinator</h1>
+  <br>
+  <input [(ngModel)]="newAddition.title" type="text" placeholder="Enter Title"  />
+  <br>
+  <input [(ngModel)]="newAddition.author" type="text" placeholder="Enter Author"/>
+  <br>
+  <input [(ngModel)]="newAddition.imageUrl" type="text" placeholder="Enter ImageURL"/>
+  <br>
+  <input [(ngModel)]="newAddition.type" type="text" placeholder="Enter Type"/>
+  <br>
+  <input [(ngModel)]="newAddition.body" type="text" placeholder="Enter Body"/>
+  <br>
+  <button (click)="addContent()">Add</button>
+  <br>
+  <p class="error"> {{error}}</p>
+</div>
