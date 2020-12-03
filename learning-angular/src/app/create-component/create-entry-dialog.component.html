@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Make new Entry</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input matInput  [(ngModel)]="newAddition.title" placeholder="enter title"/>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="newAddition.author" placeholder="enter author"/>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="newAddition.imgUrl" placeholder="enter image url"/>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="newAddition.type" placeholder="enter type"/>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="newAddition.body" placeholder="enter body" />
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button  mat-raised-button color="primary"[mat-dialog-close]="newAddition">Add Content</button>
+  <button  mat-button (click)="noClick()">Cancel</button>
+</div>
